@@ -4,12 +4,21 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<style type="text/css">
-		#mapa-vazduha {
+		.map-container {
 			width:100%;
 			padding-bottom: 56.25%;
     		height: 0;
     		overflow: hidden;
 			border:0 none;
+			position:relative;
+		}
+		#mapa-vazduha {
+			border: 0;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
 		}
 	</style>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,8 +27,9 @@
 
 <body>
 	<div class="container">
-		<iframe width="100%" height="auto" frameborder="0" id="mapa-vazduha" src="https://maker.allthingstalk.com/ep/5d9319b52a7d44000116498e/maker:4Nl4HE0OLpQkW1VeVrrTGu4jdzszHfemR2zinrz1"> </iframe>
-
+		<div class="map-container">
+			<iframe id="mapa-vazduha" width="100%" height="auto" frameborder="0" src="https://maker.allthingstalk.com/ep/5d9319b52a7d44000116498e/maker:4Nl4HE0OLpQkW1VeVrrTGu4jdzszHfemR2zinrz1"> </iframe>
+		</div>
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="card" id="mc_embed_signup">
