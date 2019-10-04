@@ -11,12 +11,18 @@
 		}
 		.map-container {
 			width:100%;
-			padding-bottom: 56.25%;
-    		height: 0;
-    		overflow: hidden;
+			padding-bottom: 100%;
+    			height: 0;
+    			overflow: hidden;
 			border:0 none;
 			position:relative;
 		}
+		@media only screen and (min-width: 576px) {
+			.map-container {
+				padding-bottom: 56.25%;
+			}
+		}
+		
 		#mapa-vazduha {
 			border: 0;
 			height: 100%;
@@ -33,12 +39,16 @@
 <body>
 	<div class="container">
 		<hr/>
+ 		<h1 class="d-inline">
+			<span class="text-primary">Vazduh</span> <span class="text-secondary">Gradjanima</span>
+ 		</h1>
+		<hr/>
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="card">
 					<div class="card-body">
 						<div class="map-container">
-							<iframe id="mapa-vazduha" width="100%" height="auto" frameborder="0" src="https://maker.allthingstalk.com/ep/5d9319b52a7d44000116498e/maker:4Nl4HE0OLpQkW1VeVrrTGu4jdzszHfemR2zinrz1"> </iframe>
+							<iframe id="mapa-vazduha" width="100%" height="auto" frameborder="0" src="https://maker.allthingstalk.com/ep/5d95d39a6ec1b30001592b48/maker:4PgJO9QYh8SfW1VeVnzNG28PbowtrMokQpQoFrR"> </iframe>
 						</div>
 					</div>
 				</div>
